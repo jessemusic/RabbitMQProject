@@ -50,12 +50,12 @@ public class RabbitMQConfig {
                 .to(directExchange())
                 .with(ROUTING_KEY_STUDENT_MESSAGE_LOG);
     }
-
-    @Bean
-    public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory){
-        return new RabbitAdmin(connectionFactory);
-
-    }
+//
+//    @Bean
+//    public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory){
+//        return new RabbitAdmin(connectionFactory);
+//
+//    }
 
     @Bean
     public Jackson2JsonMessageConverter messageConverter(){
